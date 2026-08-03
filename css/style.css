@@ -1,0 +1,299 @@
+:root {
+	
+	--dark-slate-green: #a3f5da;
+	--light-sea-green: #14b881;
+	--pale-turqoise: #a3f5da;
+	
+	--dark-goldenrod: #c2850a;
+	--goldenrod: #ffbb33;
+	--navajo-white: #ffdd99;
+	
+	--dark-gray: #9c8fa3;
+	--light-gray: #cec7d1;
+	--grainsboro: #e6e3e8;
+	
+	/*Olive*/
+	--primary-shade: hsl(72, 20%, 05%);
+	--primary-color: hsl(72, 40%, 10%);
+	--primary-tint:  hsl(72, 20%, 60%);
+	
+	/*Teal*/
+	--secondary-shade: hsl(190, 40%, 20%);
+	--secondary-color: hsl(190, 40%, 40%);
+	--secondary-tint: hsl(190, 40%, 80%);
+	
+	/*Magenta*/
+	--tertiary-shade: hsl(312, 05%, 40%);
+	--tertiary-color: hsl(312, 05%, 60%);
+	--tertiary-tint: hsl(312, 05%, 80%);
+	
+	--font-heading: "Cormorant Garamond", serif;
+	--font-body: "Inter", sans-serif;
+	
+	--padding: 8px;
+	
+	--corner-radius: 12px;
+}
+
+
+html, body {
+	background-color: var(--primary-shade);
+	
+	font-family: var(--font-body);
+	font-size: 16px;
+	
+	margin: 0;
+	width: 100%;
+	height: 100%;
+}
+
+h2 {
+	font-family: var(--font-heading);
+	color: var(--tertiary-color);
+	margin: 0;
+}
+
+h3 {
+	font-family: var(--font-heading);
+	color: var(--tertiary-color);
+	margin: 0;
+}
+
+ul {
+	list-style: none;
+	
+	color: var(--primary-tint);
+	font-size: 16px;
+	margin: 0;
+} 
+
+dl {
+	list-style: none;
+	
+	color: var(--primary-tint);
+	font-size: 16px;
+	margin: 0;
+}
+
+table {
+	color: var(--primary-tint);
+}
+
+th {
+	color: var(--tertiary-shade);
+}
+
+p {
+	color: var(--primary-tint);
+	font-size: 16px;
+	margin: 0;
+}
+
+a {
+	text-decoration: none;
+	margin: 0;
+}
+
+.brace {
+	
+	height: 8px;
+	
+	background-color: var(--goldenrod);
+}
+
+.top  {
+	--primary-tint: var(--pale-turqoise);
+	--primary-color: var(--light-sea-green);
+	--accent-color: var(--goldenrod);
+	--secondary-color: var(--light-gray);
+	
+	display: flex;
+	
+	align-items: center;
+	
+	background-color: var(--primary-color);
+	
+	grow: 1;
+	
+	width: 100%;
+	height: 64px;
+}
+
+
+header {
+	
+	display: flex;
+	
+	flex-direction: row;
+	
+	align-items: flex-start;
+	justify-content: flex-start;
+	
+	overflow: hidden;
+	white-space: nowrap;
+	
+	border-style: solid;
+	border-color: yellow;
+	border-width: 1px;
+	
+	font-family: var(--font-heading);
+	
+	padding: 4px;
+	width: 20%;
+	height: 100%-4px;
+}
+
+header h1 {
+	
+	color: var(--primary-tint);
+	
+	font-size: 16px;
+}
+
+#slot {
+	
+	background-color: var(--secondary-color);
+	
+	width: 24px;
+	height: 48px;
+	
+	margin: 10px;
+	
+	border-radius: 2px;
+}
+
+.top-nav {
+	
+	display:flex;
+	
+	align-items: center;
+	justify-content: center;
+	
+	background-color: var(--tertiary-color);
+	
+	height: 2%;
+	
+	font-size: 16px;
+}
+
+.top-nav a {
+	color: var(--tertiary-tint);
+}
+
+.stage
+{
+	display: flex;
+	
+	margin: 1vw;
+}
+
+#sidebar {
+	
+	display: flex;
+	
+	flex-direction: column;
+	
+	text-align: center;	
+	
+	background-color: var(--primary-color);
+	
+	flex-shrink: 0;
+	
+	width: 248px;
+	
+	overflow: hidden;
+}
+
+#sidebar h2 {
+	
+	color: var(--primary-tint);
+	
+}
+
+#sidebar p {
+	
+	color: var(--primary-color);
+	
+}
+
+#sidebar th {
+	color: var(--primary-tint);
+}
+
+#sidebar td {
+	
+	color: var(--primary-color);
+	
+}
+
+#sidebar dl {
+	list-style: none;
+	
+	color: var(--tertiary-color);
+	font-size: 16px;
+	margin: 0;
+}
+
+
+
+.sidebar-section {
+	
+	background-color: var(--primary-shade);
+	
+	padding: var(--padding);
+	
+	margin: 4px;
+}
+
+#sidebar-body {
+	
+	padding: 0px;
+	
+}
+
+#trivia {
+	
+	display: flex;
+	
+	flex-direction: column;
+	
+	justify-content: center;
+	align-items:center;
+	
+	background-color: var(--tertiary-color);
+	
+	margin: 4px;
+	
+	padding: var(--padding);
+	
+}
+
+#trivia p {
+	
+	color: var(--tertiary-tint);
+	
+}
+
+#trivia h3 {
+	
+	color: var(--primary-tint);
+	
+}
+
+#trivia dl {
+	
+	color: var(--secondary-color);
+}
+
+#trivia dt {
+	
+	color: var(--secondary-color);
+	
+}
+
+main {
+	display: flex;
+	flex:1;
+	min-width: 0;
+	padding: 30px;
+}
