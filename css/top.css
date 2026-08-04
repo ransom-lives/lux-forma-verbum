@@ -8,7 +8,9 @@
 
 	height: 64px;
 	
-	padding-left: 20px;
+	padding: 0px;
+	margin: 0px;	
+	
 }
 
 header {
@@ -16,23 +18,31 @@ header {
 	display: flex;
 	
 	flex-direction: row;
-	
-	align-items: flex-start;
+	align-items: center;
 	justify-content: flex-start;
+	
+	height: 100%;
 	
 	overflow: hidden;
 	white-space: nowrap;
 	
+	width: 248px;
+	
+	padding: 20px;
+	margin: 0px;
+	
 	font-family: var(--font-heading);
 	
-	padding: 4px;
-	height: 100%-4px;
 }
 
 header h1 {
 	
 	color: var(--primary-tint);
 	
+	padding: 0px;
+	margin: 0px;
+	
+	font-weight: bold;
 	font-size: 16px;
 }
 
@@ -53,13 +63,42 @@ header h1 {
 	display:flex;
 	
 	align-items: center;
-	justify-content: center;
+	justify-content: flex-start;
 	
-	height: 2%;
+	gap: 16px;
 	
 	font-size: 16px;
 }
 
-.top-nav a {
-	color: var(--tertiary-tint);
+.nav-link {
+	
+	font-weight: bold;
+	
+	cursor: pointer;
+	user-select: none;
+	
+	color: var(--pale-turqoise);
+	
+}
+
+.nav-link:hover {
+	color: var(--navajo-white);
+}
+
+.active {
+	color: var(--goldenrod);
+}
+
+.disabled {
+	
+	
+	color: var(--light-sea-green-tone);
+	
+}
+
+.disabled:hover {
+	
+	color: var(--light-sea-green-tone);
+	cursor: default;
+	
 }
