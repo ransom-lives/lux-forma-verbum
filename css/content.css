@@ -1,13 +1,16 @@
 #content {
 	
 	display: flex;
-	flex: 1;
+	flex-grow: 1;
 	flex-direction: column;
+	align-self: stretch;
 	
 	margin: 0px;
 	padding: 0px;
 	
 	border-width: 0px;	
+	
+	height: 100%;
 }
 
 #content h2 {
@@ -27,26 +30,12 @@
 	width: fit-content;
 }
 
-#content .card-display img{
+#content-frame {
 	
-	width: auto;
-	height: auto;
-	max-width: 100%;
-	max-height: 128px;
-	
-	object-fit: cover;
-	
-}
-
-#content .panel-c {
-	
-	padding: 20px;
-	
+	display: flex;
+	flex-direction: column;
 	flex-grow: 1;
-}
-
-.logo {
-	
-	filter: drop-shadow(4px 4px 1px var(--global-shade))
+	align-self: stretch;
+	padding: 20px;
 	
 }

@@ -7,7 +7,8 @@
 		<link rel="stylesheet" href ="css/top.css">
 		<link rel="stylesheet" href ="css/sidebar.css">
 		<link rel="stylesheet" href ="css/content.css">
-		<script src="script.js" defer></script>
+		<link rel="stylesheet" href ="css/images.css">
+		<script type="module" src="main.js"></script>
 	</head>
 	<body>
 		<div id="top" class="panel-a">
@@ -18,7 +19,7 @@
 			<nav class="top-nav">
 				<a class="nav-link" data-page="main">MAIN</a>
 				<a class="nav-link" data-page="2d">2D</a>
-				<a class="nav-link disabled" data-page="3d">3D</a>
+				<a class="nav-link" data-page="3d">3D</a>
 				<a class="nav-link disabled" data-page="tech">TECH</a>
 				<a class="nav-link disabled" data-page="reclaimer">RECLAIMER</a>
 				<a class="nav-link disabled" data-page="reclaimer">STARBREAK</a>
@@ -40,11 +41,14 @@
 				<footer>OPUS LUX OPUS FORMA OPUS VERBA</footer>
 			</div>
 			<div class="split-vertical"></div>
-			<main id="content" class="inset"></main>
+			<main id="content" class="inset">
+				<div id="content-frame" class="panel-c"></div>
+			</main>
 		</div>
 		<div id="lightbox" class="lightbox hidden">
-			<img id="lightbox-image" src="" alt=""></img>
+			<div id="lightbox-image">
+				<img src="" alt=""></img>
+			</div>
 		</div>
-	</body>	
-	
+	</body>
 </html>

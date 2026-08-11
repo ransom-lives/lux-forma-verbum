@@ -1,0 +1,296 @@
+.card-display {
+	--card-width: 248px;
+	--thumb-height: 186px;
+	
+	isolation: isolate;
+	display: grid;
+	flex: 1;
+	
+	grid-template-columns: repeat(5, minmax(0, var(--card-width)));
+	
+	align-items: center;	
+	justify-items: center;
+	
+	
+	gap: 6px;
+}
+
+.card {
+	display: flex;
+	flex-direction: column;
+	flex-grow: 1;
+	align-self: stretch;
+	
+	align-content: center;
+	align-items: center;
+	
+	padding: 0px;
+	margin: 0px;
+	
+	transition: .2s;
+}
+
+.card img{
+	width: 100%;
+	height: auto;
+	filter: contrast(0.8) brightness(0.9);
+}
+
+.card:hover .card-image{
+	box-shadow: 0 4px 2px 1px rgba(255, 248, 200, 0.1);
+}
+
+.card:hover img {
+	filter: none;
+	z-index: 1;
+	
+	animation: flash 0.08s ease-out;
+}
+
+@keyframes flash {
+	from {
+		filter: brightness(1.3);
+	}
+	to
+	{
+		filter: brightness(1.0);
+	}
+}
+
+
+
+#card-brace {
+	flex-grow: 1;
+	align-self: stretch;
+	height: 10px;
+	margin: 0px;
+	padding: 0px;
+}
+
+.logo-display {
+	display: grid;
+	flex-grow: 1;
+	flex-shrink: 1;
+	
+	grid-template-columns: repeat(5, minmax(0, 200px));
+	
+	align-items: center;	
+	justify-items: center;
+	
+	gap: 4px;
+	
+}
+
+.logo-display img {
+	width: auto;
+	height: auto;
+	max-width: 100%;
+	max-height: 128px;
+	
+	object-fit: cover;
+	
+	filter: drop-shadow(4px 4px 1px var(--global-shade));
+	
+}
+
+.card-frame {
+	position: relative;
+	display: flex;
+	flex-direction: column;
+	flex-grow: 1;
+	align-self: stretch;
+	
+	padding: 8px;
+	
+	justify-content: center;
+	align-items: center;
+	
+	padding: 0px;
+	margin: 0px;	
+	
+	overflow: hidden;
+}
+
+.card-image{
+	position: relative;
+	display: flex;
+	flex-grow: 1;
+	flex-shrink: 0px;
+	align-self: stretch;
+	
+	justify-content: center;
+	align-items: center;
+	justify-items: center;
+	align-self: center;
+	
+	height: auto;
+	max-width: var(--card-width);
+
+	padding: 0px;
+	
+	pointer-events: none;
+	
+	background-color: var(--global-shade);
+}
+
+.card-image::before {
+	content: "";
+	position: absolute;
+	inset: 0px;
+	
+	background-color: white;
+	background-image: var(--grille);
+	opacity: 0.2;
+	mix-blend-mode: color;
+	
+	pointer-events: none;
+	
+	transition: 0.1s;
+	
+	z-index: 1;
+}
+
+.card-image::after {
+	content: "";
+	position: absolute;
+	inset: 0px;
+	
+	background-color: white;
+	background-image:  url("../images/noise.gif");
+	opacity: 0.2;
+	mix-blend-mode: overlay;
+	
+	pointer-events: none;
+	
+	transition: 0.1s;
+}
+
+.card-caption {
+	display: flex;
+	
+	width: 100%;
+	flex-grow: 1;
+	
+	align-items: flex-end;
+	justify-content: center;
+	
+	height: 16px;
+	
+	margin: 0px;
+	padding: 2px;
+	
+	text-align: center;	
+	
+	font-size: 12px;
+	color: var(--dim-gray);
+	
+	text-overflow: clip;
+	
+	pointer-events: none;
+	
+	transition: .2s;
+}
+
+.card:hover .card-caption {
+	color: var(--navajo-white);
+}
+
+
+.hidden {
+	
+	display: none;
+	opacity: 0.0;
+	pointer-events: none;
+	
+	transition: 0.1s;
+}
+
+.lightbox {
+	
+	
+	position: fixed;
+	inset: 0;
+	
+	display: flex;
+	justify-content:center;
+	align-items: center;
+	
+	background-color: rgba(0.0,0.0,0.0,0.8);
+	
+	backdrop-filter: blur(4px);
+
+	z-index: 999;
+	
+	transition: 0.1s;
+}
+
+.lightbox::before {
+	content: "";
+	position: absolute;
+	inset: 0px;
+	
+	width: 100%;
+	height: 100%;
+	
+	background-image: var(--scanlines);
+	mix-blend-mode: multiply;
+	opacity: 0.4;
+	
+	z-index: 999;
+	
+	pointer-events: none;
+}
+
+.lightbox::after {
+	content: "";
+	position: absolute;
+	inset: 0px;
+	
+	width: 100%;
+	height: 100%;
+	
+	background-image: var(--grille);
+	mix-blend-mode: color;
+	opacity: 0.2;
+	
+	z-index: 999;
+	
+	pointer-events: none;
+	
+}
+
+#lightbox-image img{
+	
+	width: auto;
+	height: auto;
+	max-width: 90vw;
+	
+	box-shadow: 0 0 20px 12px rgb(255,255,255,0.04);
+	
+	border-radius: 8px;
+	
+	outline-style: solid;
+	outline-width: 4px;
+	outline-color: rgb(255,255,255,0.04);
+	outline-offset: -4px;
+}
+
+#lightbox-image {
+	isolation: isolate;
+	z-index: 1000;
+}
+
+#lightbox-image .reveal {
+	animation: image-reveal 0.112s ease-out;
+}
+
+@keyframes image-reveal {
+	from {
+		opacity: 0.0;
+		filter: brightness(3);
+	}
+	to {
+		opacity: 1.0;
+		filter: brightness(1);
+	}
+}
