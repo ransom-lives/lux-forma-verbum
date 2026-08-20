@@ -3,6 +3,7 @@ import { populateCardDisplay, populateLogoDisplay } from "./images.js";
 
 const lightbox = document.getElementById("lightbox");
 const lightboxImage = document.getElementById("lightbox-image").querySelector("img");
+const lightboxVideo = document.getElementById("lightbox-video").querySelector("source");
 
 /**
 	Data
@@ -78,51 +79,8 @@ document.querySelectorAll(".nav-link").forEach(link => {
 	});	
 });
 
-lightboxImage.onload = () => {
-	
-	lightbox.classList.remove("hidden");
-	
-	lightboxImage.classList.remove("reveal");
-	void lightboxImage.offsetWidth;
-	lightboxImage.classList.add("reveal");
-};
+/**	Funcs */
 
-document.addEventListener("click", (evt) => {
-	
-	const card = event.target.closest(".card");
-	
-	if (!card)
-	{
-		return;
-	}
-	
-	lightbox.classList.add("hidden");
-	lightboxImage.src = card.dataset.imagePath;
-});
-
-
-lightbox.addEventListener("click", (evt) =>{
-	
-	lightbox.classList.add("hidden");
-	
-});
-
-/**
-	Funcs
-**/
-
-function prepareImages() {
-	
-	document.querySelectorAll(".clickable-image").forEach(image => {
-	
-	const imageName = image.dataset.imageName;
-	const thumbnailPath = `${Paths.THUMBS_DIR}${imageName}`
-	const artPath = `${Paths.ART_DIR}${imageName}`
-	
-	image.src = artPath;
-	
-	});
-}
 
 function setActivePage(pageName) {
 	

@@ -1,0 +1,344 @@
+[
+  {
+    "name": "crono_a",
+    "title": "Crono",
+    "caption": "A sculpt of Crono to celebrate the anniversary of Chrono Trigger.",
+    "type": "image",
+    "tags": [
+      "3d"
+    ]
+  },
+  {
+    "name": "crono_anniversary_concept",
+    "title": "Chrono Trigger Anniversary Concept",
+    "caption": "Concept art to celebrate the anniversary of Chrono Trigger.",
+    "type": "image",
+    "tags": [
+      "2d",
+      "concept-art"
+    ]
+  },
+  {
+    "name": "crono_b",
+    "title": "Crono",
+    "caption": "A sculpt of Crono to celebrate the anniversary of Chrono Trigger.",
+    "type": "image",
+    "tags": [
+      "3d"
+    ]
+  },
+  {
+    "name": "duskwing_concepts_a",
+    "title": "Duskwing Concepts",
+    "caption": "Various concept art for the Duskwing from StarBreak.",
+    "type": "image",
+    "tags": [
+      "2d",
+      "concept-art",
+      "starbreak"
+    ]
+  },
+  {
+    "name": "duskwing_concepts_b",
+    "title": "Duskwing Concepts",
+    "caption": "Various concept art for the Duskwing from StarBreak.",
+    "type": "image",
+    "tags": [
+      "2d",
+      "concept-art",
+      "starbreak"
+    ]
+  },
+  {
+    "name": "duskwing_early_concept",
+    "title": "Duskwing Early Concept",
+    "caption": "An early concept for the character that would become Duskwing from StarBreak.",
+    "type": "image",
+    "tags": [
+      "2d",
+      "concept-art",
+      "starbreak"
+    ]
+  },
+  {
+    "name": "duskwing_key",
+    "title": "Duskwing",
+    "caption": "Key art for the Duskwing character from StarBreak.",
+    "type": "image",
+    "tags": [
+      "2d",
+      "concept-art",
+      "starbreak"
+    ]
+  },
+  {
+    "name": "homeworld_celestial_bodies",
+    "title": "Celestial Bodies",
+    "caption": "Homeworld: Vast Reaches needed special systems for drawing deep space scenery.\n\nI created a system that assisted in the placement and rendering of distant objects, like planets. This allowed designers and artists to place elements in space as they please, but conveniently keeps them within camera clip bounds.\n\nThe objects are then drawn as if they are appropriately distant from the player.",
+    "type": "video",
+    "tags": [
+      "tech",
+      "homeworld"
+    ]
+  },
+  {
+    "name": "homeworld_lod_debugger",
+    "title": "LOD Debugger",
+    "caption": "I created this tool in Unity for debugging LODs & mesh fitness for Homeworld: Vast Reaches. It allows the mesh to be conveniently evaluated visually and provides a variety of useful metrics.",
+    "type": "video",
+    "tags": [
+      "tech",
+      "homeworld"
+    ]
+  },
+  {
+    "name": "homeworld_star_field_gpu_culling",
+    "title": "Star field GPU Culling",
+    "caption": "Homeworld: Vast Reaches needed special systems for drawing deep space scenery.\n\nI created a system that allowed artist to generate a star field which was projected onto a sphere surrounding the player. This sphere was rendered in such a way as to appear extremely distant. This system uses GPU culling to draw as many stars as possible while minimizing performance burden.\n\nI also created tools that allowed artists to “paint” the star system through textures and color gamuts.",
+    "type": "video",
+    "tags": [
+      "tech",
+      "homeworld"
+    ]
+  },
+  {
+    "name": "homeworld_vast_reaches_tech_art",
+    "title": "Homeworld: Vast Reaches",
+    "caption": "On Homeworld: Vast Reaches I handled shaders, rendering, gpu performance, various technically challenging art tasks, and related tooling.",
+    "type": "image",
+    "tags": [
+      "tech",
+      "homeworld"
+    ]
+  },
+  {
+    "name": "homeworld_vast_reaches_trailer",
+    "title": "Homeworld: Vast Reaches",
+    "caption": "The announcement trailer for Homeworld: Vast Reaches. I handled shaders, rendering, gpu performance, various technically challenging art tasks, and related tooling.",
+    "type": "video",
+    "tags": [
+      "tech",
+      "homeworld"
+    ]
+  },
+  {
+    "name": "ig_playing_god_promo",
+    "title": "Indigo Gaming’s ‘Playing God’ Key Art",
+    "caption": "Key art for Indigo Gaming’s “Playing God” documentary.",
+    "type": "image",
+    "tags": [
+      "2d"
+    ]
+  },
+  {
+    "name": "ig_quintet_promo",
+    "title": "Indigo Gaming – Quintet Key Art",
+    "caption": "Key art for Indigo Gaming’s Quintent documentary.",
+    "type": "image",
+    "tags": [
+      "2d"
+    ]
+  },
+  {
+    "name": "ironclad_concepts",
+    "title": "Ironclad Concepts",
+    "caption": "Various concept art for the Ironclad from StarBreak.",
+    "type": "image",
+    "tags": [
+      "2d",
+      "concept-art",
+      "starbreak"
+    ]
+  },
+  {
+    "name": "ironclad_key_art",
+    "title": "Ironclad Key Art",
+    "caption": "Key art for the Ironclad from StarBreak.",
+    "type": "image",
+    "tags": [
+      "2d",
+      "concept-art",
+      "illustration",
+      "starbreak"
+    ]
+  },
+  {
+    "name": "location_builder_a",
+    "title": "Location Builder Screenshot",
+    "caption": "A screenshot of the Location Builder interface.",
+    "type": "image",
+    "tags": [
+      "tech"
+    ]
+  },
+  {
+    "name": "location_builder_b",
+    "title": "Location Builder screenshot.",
+    "caption": "A screenshot of the Location Builder interface.",
+    "type": "image",
+    "tags": [
+      "tech"
+    ]
+  },
+  {
+    "name": "location_builder_lookaround",
+    "title": "Looking Around a Location",
+    "caption": "Video capture of looking around in a Location built with Location Builder.",
+    "type": "video",
+    "tags": [
+      "tech",
+      "reclaimer"
+    ]
+  },
+  {
+    "name": "location_builder_walkaround",
+    "title": "Walking Around a Location",
+    "caption": "Video capture of navigating around a Location built with Location Builder.",
+    "type": "video",
+    "tags": [
+      "tech",
+      "reclaimer"
+    ]
+  },
+  {
+    "name": "samus",
+    "title": "Samus Aran",
+    "caption": "Samus Aran.",
+    "type": "image",
+    "tags": [
+      "2d"
+    ]
+  },
+  {
+    "name": "sonic_bonus_concepts",
+    "title": "Sonic Bonus Gate Concepts",
+    "caption": "“Bonus Gate” concept art for an unreleased Sonic game.",
+    "type": "image",
+    "tags": [
+      "2d",
+      "sonic"
+    ]
+  },
+  {
+    "name": "sonic_mania_2_style",
+    "title": "Unreleased Sonic Game Concept Art.",
+    "caption": "Concept art for an unreleased Sonic game.",
+    "type": "image",
+    "tags": [
+      "2d",
+      "sonic"
+    ]
+  },
+  {
+    "name": "sonic_special_stage",
+    "title": "Sonic Special Stage",
+    "caption": "Special Stage concept art for an unreleased Sonic game.",
+    "type": "image",
+    "tags": [
+      "2d",
+      "sonic"
+    ]
+  },
+  {
+    "name": "stars_jared",
+    "title": "Jared, member of S.T.A.R.S.",
+    "caption": "An illustration of Jared from Avalanche Gaming as a member of Resident Evil’s S.T.A.R.S. unit.",
+    "type": "image",
+    "tags": [
+      "2d"
+    ]
+  },
+  {
+    "name": "sun_wukong_concepts",
+    "title": "Sun Wukong Concepts",
+    "caption": "Concept art for new designs for Sun Wukong from RWBY.\n\nThis didn’t actually go anywhere, but I had fun!",
+    "type": "image",
+    "tags": [
+      "2d",
+      "concept-art"
+    ]
+  },
+  {
+    "name": "super_method_s950",
+    "title": "Super Method S-950",
+    "caption": "Super Deformed Super Method S-950.",
+    "type": "video",
+    "tags": [
+      "3d"
+    ]
+  },
+  {
+    "name": "super_method_s950_a",
+    "title": "Super Method S-950",
+    "caption": "Super Deformed Super Method S-950.",
+    "type": "image",
+    "tags": [
+      "3d"
+    ]
+  },
+  {
+    "name": "twin_perfect",
+    "title": "Twin Perfect Key Art",
+    "caption": "A promo illustration for Twin Perfect.",
+    "type": "image",
+    "tags": [
+      "2d"
+    ]
+  },
+  {
+    "name": "wildfire_early_concepts",
+    "title": "Wildfire Concepts",
+    "caption": "Various concept art for the Wildfire from StarBreak.",
+    "type": "image",
+    "tags": [
+      "2d",
+      "concept-art",
+      "starbreak"
+    ]
+  },
+  {
+    "name": "wildfire_key_art",
+    "title": "Wildfire Key Art",
+    "caption": "Key art for the Wildfire from StarBreak.",
+    "type": "image",
+    "tags": [
+      "2d",
+      "concept-art",
+      "illustration",
+      "starbreak"
+    ]
+  },
+  {
+    "name": "wildfire_promo",
+    "title": "Wildfire Promo Art",
+    "caption": "Promo art featuring the Wildfire from StarBreak.",
+    "type": "image",
+    "tags": [
+      "2d",
+      "illustration",
+      "starbreak"
+    ]
+  },
+  {
+    "name": "quest_masters_promo",
+    "title": "Quest Masters",
+    "caption": "Quest Masters was an RPG / Management Sim.\n\nPlayers assmble and customize their own guild of adventurers. Teams of characters are dispatched to various locations where randomly generated adventures await. Strengthen your recruits and find valuable loot to make your guild the most powerful in the world!\n\nProgramming, design, and a very small amount of art was provided by me. The vast majority of artwork was provided by Ashleigh Hetrick (https://www.pyawakit.com/).",
+    "type": "image",
+    "tags": [
+      "tech",
+      "game-dev",
+      "quest-masters"
+    ]
+  },
+  {
+    "name": "quest_masters_members",
+    "title": "Quest Masters Members Screen",
+    "caption": "The members screen in Quest Masters. Here, new recruits are proposed to the players periodically. \n\nThe player can vet and select new members for their guilds from this menu. In the related sub-menus, they can be organized into parties.",
+    "type": "image",
+    "tags": [
+      "tech",
+      "game-dev",
+      "quest-masters"
+    ]
+  }
+]

@@ -1,3 +1,5 @@
+/** Cards */
+
 .card-display {
 	--card-width: 248px;
 	--thumb-height: 186px;
@@ -56,8 +58,6 @@
 		filter: brightness(1.0);
 	}
 }
-
-
 
 #card-brace {
 	flex-grow: 1;
@@ -191,10 +191,8 @@
 	transition: .2s;
 }
 
-.card:hover .card-caption {
-	color: var(--navajo-white);
-}
 
+/** Lightbox */
 
 .hidden {
 	
@@ -205,13 +203,22 @@
 	transition: 0.1s;
 }
 
+.reveal {
+	animation: image-reveal 0.112s ease-out;
+}
+
 .lightbox {
 	
+	--content-glow-color: rgb(255,255,255,0.04);
+	--content-shadow: 0 0 20px 12px var(--content-glow-color);
+	--content-outline: solid 4px var(--content-glow-color);
+	--content-outline-offset: -4px;
 	
 	position: fixed;
 	inset: 0;
 	
 	display: flex;
+	flex-direction: column;
 	justify-content:center;
 	align-items: center;
 	
@@ -222,6 +229,18 @@
 	z-index: 999;
 	
 	transition: 0.1s;
+}
+
+#loading-message {
+	width: auto;
+	height: auto;
+	
+	font-size: 32px;
+	color: var(--dim-gray);
+	
+	text-shadow: 0 0 20px var(--content-glow-color);
+	
+	z-index: 1000;
 }
 
 .lightbox::before {
@@ -259,29 +278,39 @@
 	
 }
 
-#lightbox-image img{
+#lightbox-content {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
 	
+	z-index: 1000;
+}
+
+#lightbox .content {
 	width: auto;
 	height: auto;
+	
 	max-width: 90vw;
+	max-height: 90vh;
+
+	box-shadow: var(--content-shadow);
 	
-	box-shadow: 0 0 20px 12px rgb(255,255,255,0.04);
+	border-radius: 8px 8px 0px 0px;
 	
-	border-radius: 8px;
-	
-	outline-style: solid;
-	outline-width: 4px;
-	outline-color: rgb(255,255,255,0.04);
-	outline-offset: -4px;
+	outline: var(--content-outline);
+	outline-offset: var(--content-outline-offset);	
 }
 
 #lightbox-image {
+	
 	isolation: isolate;
 	z-index: 1000;
 }
 
-#lightbox-image .reveal {
-	animation: image-reveal 0.112s ease-out;
+
+#lightbox-video {
+	isolation: isolate;
+	z-index: 1000;
 }
 
 @keyframes image-reveal {
@@ -294,3 +323,45 @@
 		filter: brightness(1);
 	}
 }
+
+#caption-panel {
+	display: flex;
+	flex-direction: row;
+	
+	
+	flex-grow: 1;
+	align-self: stretch;
+	margin: 0px;
+	
+	max-height: fit-content;
+}
+
+#caption-panel .panel-a {
+	min-width: 16px;
+	max-width: 16px;
+}
+
+#caption-panel .panel-c {
+	display: flex;
+	flex-direction: row;
+	flex-grow: 1;
+	
+	text-align: left;
+	
+	white-space: pre-line;
+	
+	width: 32px;
+	padding: 2px;
+	padding-left: 20px;
+	
+	color: var(--dark-gray);
+}
+
+.card #caption-panel .panel-c {
+	margin-left: -16px;
+}
+
+.card:hover #caption-panel .panel-c {
+	color: var(--navajo-white);
+}
+

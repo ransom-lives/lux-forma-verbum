@@ -1,55 +1,80 @@
 import * as Paths from "./paths.js";
 
+const lightbox = document.getElementById("lightbox");
+const lightboxImage = document.getElementById("lightbox-image").querySelector("img");
+const lightboxVideo = document.getElementById("lightbox-video").querySelector("video");
+const lightboxCaption = document.getElementById("caption-panel").querySelector(".panel-c");
+
 /** DATA **/
+
+const Media = Object.freeze(
+{
+	IMAGE: "image",
+	VIDEO: "video"
+});
+
+const MEDIA_DATA = await loadMediaData();
 
 const companies = [
 	{
 		name: "enduring_games",
 		title: "Enduring Games",
+		type: Media.IMAGE
 	},
 	{
 		name: "azra_games",
-		title: "Azra Games"
+		title: "Azra Games",
+		type: Media.IMAGE
 	},
 	{
 		name: "wayforward",
-		title: "Wayforward"
+		title: "Wayforward",
+		type: Media.IMAGE
 	},
 	{
 		name: "gearbox",
-		title: "Gearbox"
+		title: "Gearbox",
+		type: Media.IMAGE
 	},
 	{
 		name: "farbridge",
-		title: "FarBridge"
+		title: "FarBridge",
+		type: Media.IMAGE
 	},
 	{
 		name: "sega",
-		title: "Sega"
+		title: "Sega",
+		type: Media.IMAGE
 	},
 	{
 		name: "hyperkinetic",
-		title: "Hyperkinetic"
+		title: "Hyperkinetic",
+		type: Media.IMAGE
 	},
 	{
 		name: "crunchy",
-		title: "Crunchy Games"
+		title: "Crunchy Games",
+		type: Media.IMAGE
 	},
 	{
 		name: "gaia_online",
-		title: "Gaia Online"
+		title: "Gaia Online",
+		type: Media.IMAGE
 	},
 	{
 		name: "lab_zero_games",
-		title: "Lab Zero Games"
+		title: "Lab Zero Games",
+		type: Media.IMAGE
 	},
 	{
 		name: "reverge_labs",
-		title: "Reverge Labs"
+		title: "Reverge Labs",
+		type: Media.IMAGE
 	},
 	{
 		name: "gorilla_systems_corp",
-		title: "Gorilla Systems Corp"
+		title: "Gorilla Systems Corp",
+		type: Media.IMAGE
 	}
 ]
 companies.forEach(logo =>{
@@ -59,63 +84,78 @@ companies.forEach(logo =>{
 const platforms = [
 	{
 		name: "nintendo_switch_2",
-		title: "Nintendo Switch 2"
+		title: "Nintendo Switch 2",
+		type: Media.IMAGE
 	},
 	{
 		name: "nintendo_switch",
-		title: "Nintendo Switch"
+		title: "Nintendo Switch",
+		type: Media.IMAGE
 	},
 	{
 		name: "nintendo_wii",
-		title: "Nintendo Wii"
+		title: "Nintendo Wii",
+		type: Media.IMAGE
 	},
 	{
 		name: "nintendo_ds",
-		title: "Nintendo DS"
+		title: "Nintendo DS",
+		type: Media.IMAGE
 	},
 	{
 		name: "playstation_5",
-		title: "Playstation 5"
+		title: "Playstation 5",
+		type: Media.IMAGE
 	},
 	{
 		name: "playstation_3",
-		title: "Playstation 3"
+		title: "Playstation 3",
+		type: Media.IMAGE
 	},
 	{
 		name: "xbox_series_s_x",
-		title: "XBox Series S|X"
+		title: "XBox Series S|X",
+		type: Media.IMAGE
 	},
 	{
 		name: "xbox_one",
-		title: "XBox One"
+		title: "XBox One",
+		type: Media.IMAGE
 	},
 	{
 		name: "meta_quest",
-		title: "Meta Quest"
+		title: "Meta Quest",
+		type: Media.IMAGE
 	},
 	{
 		name: "windows",
-		title: "Windows"
+		title: "Windows",
+		type: Media.IMAGE
 	},
 	{
 		name: "android",
-		title: "Android"
+		title: "Android",
+		type: Media.IMAGE
 	},
 	{
 		name: "unreal_engine",
-		title: "Unreal Engine"
+		title: "Unreal Engine",
+		type: Media.IMAGE
 	},
 	{
 		name: "unity",
-		title: "Unity"
+		title: "Unity",
+		type: Media.IMAGE
 	},
 	{
 		name: "godot",
-		title: ""
+		title: "Godot Game Engine",
+		type: Media.IMAGE
 	},
 	{
 		name: "nvidia",
-		title: "Nvidia"
+		title: "Nvidia",
+		type: Media.IMAGE
 	}
 ]
 platforms.forEach(logo => {
@@ -125,31 +165,38 @@ platforms.forEach(logo => {
 const properties = [
 	{
 		name: "borderlands4",
-		title: "Borderlands 4"
+		title: "Borderlands 4",
+		type: Media.IMAGE
 	},
 	{
 		name: "homeworld_vast_reaches",
-		title: "Homeworld: Vast Reaches"
+		title: "Homeworld: Vast Reaches",
+		type: Media.IMAGE
 	},
 	{
 		name: "sonic_the_hedgehog",
-		title: "Sonic the Hedgehog"
+		title: "Sonic the Hedgehog",
+		type: Media.IMAGE
 	},
 	{
 		name: "starbreak",
-		title: "StarBreak"
+		title: "StarBreak",
+		type: Media.IMAGE
 	},
 	{
 		name: "heralds_of_chaos",
-		title: "Heralds of Chaos"
+		title: "Heralds of Chaos",
+		type: Media.IMAGE
 	},
 	{
 		name: "zomg",
-		title: "ZOMG!"
+		title: "ZOMG!",
+		type: Media.IMAGE
 	},
 	{
 		name: "skullgirls",
-		title: "Skull Girls"
+		title: "Skull Girls",
+		type: Media.IMAGE
 	}
 ]
 properties.forEach(logo => {
@@ -162,80 +209,42 @@ const logos = {
 	"properties": properties
 };
 
-const images2d = [
-	{
-		name: "ig_quintet_promo",
-		title: "Indigo Gaming - Quintet",
-		caption: "Indigo Gaming Quintent documentary key image."
-	},
-	{
-		name: "samus",
-		title: "Samus Aran",
-		caption: "Samus Aran."
-	},
-	{
-		name: "twin_perfect",
-		title: "Twin Perfect",
-		caption: "Twin Perfect promo image."
-	},
-	{
-		name: "sonic_mania_2_style",
-		title: "Sonic Mania 2 Style Concept",
-		caption: "Sonic Mania 2 style concept."
-	},
-	{
-		name: "stars_jared",
-		title: "S.T.A.R.S. Jared",
-		caption: "S.T.A.R.S. Jared for Avalanche Reviews."
-	},
-	{
-		name: "sonic_bonus_concepts",
-		title: "Sonic Bonus Gate Concepts",
-		caption: "\"Bonus gate\" concept art for Sonic Mania 2."
-	},
-	{
-		name: "ig_playing_god_promo",
-		title: "Indigo Gaming \"Playing God\" Key Art",
-		caption: "Key art for Indigo Gaming's \"Playing God\" documentary."
-	},
-	{
-		name: "sonic_special_stage",
-		title: "Sonic Special Stage",
-		caption: "Special Stage concept art for Sonic Mania 2"
-	},
-	{
-		name: "crono_anniversary_concept",
-		title: "Chrono Trigger Anniversary Concept Art",
-		caption: "Concept art to celebrate the anniversary of Chrono Trigger's release."
-	},
-	{
-		name: "duskwing_key",
-		title: "Duskwing",
-		caption: "Key art for the Duskwing character from StarBreak."
-	}
-]
-images2d.forEach(image => {
-	image.name = `${image.name}.png`
+
+/** EVENTS */
+
+lightboxImage.onload = () => {
+	
+	lightbox.classList.remove("hidden");
+	lightboxVideo.classList.remove("reveal");
+	lightboxVideo.classList.add("hidden");
+	
+	lightboxImage.classList.remove("reveal");
+	void lightboxImage.offsetWidth;
+	lightboxImage.classList.add("reveal");
+	lightboxImage.classList.remove("hidden");
+};
+
+lightboxVideo.addEventListener("canplay", () => {
+	
+	lightbox.classList.remove("hidden");
+	lightboxImage.classList.remove("reveal");
+	lightboxImage.classList.add("hidden");
+	
+	lightboxVideo.classList.remove("reveal");
+	void lightboxVideo.offsetWidth;	
+	lightboxVideo.classList.add("reveal");
+	lightboxVideo.classList.remove("hidden");
+	
+	lightboxVideo.play();
 });
 
-const images3d = [
-	{
-		name: "crono_a",
-		title: "Chrono Trigger Anniversary Sculpt",
-		caption: "A sculpt of Crono to celebrate the anniversary of Chrono Trigger."
-	}
-]
-images3d.forEach(image => {
-	image.name = `${image.name}.png`
+lightbox.addEventListener("click", (evt) =>{
+	
+	lightbox.classList.add("hidden");
+	
 });
 
-
-const images = {
-	"2d": images2d,
-	"3d": images3d
-}
-
-/** CLASSES **/
+/** CLASSES */
 
 class ImageCard
 {
@@ -243,22 +252,79 @@ class ImageCard
 	{
 		this.element = template.content.firstElementChild.cloneNode(true);
 		
-		this.element.querySelector(".card").dataset.imagePath = `${Paths.ART_DIR}${data.name}`;
-		this.element.querySelector(".card-image img").src = `${Paths.THUMBS_DIR}${data.name}`;
-		this.element.querySelector(".card-caption").textContent = data.title;
+		let card = this.element.querySelector(".card");
+		if (data.type === Media.VIDEO)
+		{
+			card.dataset.videoPath = `${Paths.VIDEOS_DIR}${data.name}`;
+			card.dataset.cardType = data.type;
+		}
+		else if (data.type === Media.IMAGE)
+		{
+			card.dataset.imagePath = `${Paths.ART_DIR}${data.name}`
+			card.dataset.cardType = data.type;
+		}
+		
+		card.querySelector(".card-image img").src = `${Paths.THUMBS_DIR}${data.name}.png`;
+		card.querySelector(".card-caption").textContent = data.title;
+		card.dataset.caption = data.caption;
+		
+		card.addEventListener("click", this.PrepareLightbox);
+	}
+	
+	PrepareLightbox(evt){
+		
+		const card = evt.target;
+		
+		lightbox.classList.add("hidden");
+		
+		if (card.dataset.cardType === Media.VIDEO) {
+			lightboxVideo.src = `${card.dataset.videoPath}.mp4`;
+			lightboxVideo.load();
+		}
+		else if (card.dataset.cardType === Media.IMAGE)	{
+			lightboxImage.src = `${card.dataset.imagePath}.png`;
+		}
+		
+		lightboxCaption.textContent = card.dataset.caption;
 	}
 }
 
 
 /** FUNCS **/
 
+async function loadMediaData() {
+	const response = await fetch("./data/portfolio_content.json");
+	
+	if (!response.ok) {
+		throw new Error(`Couldn't load content data: ${response.status}.`);
+	}
+	
+	return await response.json();
+}
+
+function getMediaByTag(tag) {
+	return MEDIA_DATA.filter(data => data.tags.includes(tag));
+}
+
 export function populateCardDisplay(cardDisplay) {
 	
-	const imageCollection = images[cardDisplay.dataset.imageSet];
+	const tags = cardDisplay.dataset.mediaTags
+		?.split(",")
+		.map(tag => tag.trim()) ?? [];
+	
+	let gathered_media = new Set();
+	
+	for (const tag of tags) {
+		const matchingMedia = getMediaByTag(tag);
+		matchingMedia.forEach(data => {
+			gathered_media.add(data);
+		});
+	}
+	
 	const template = document.querySelector("#card-template");
 	
-	imageCollection.forEach(image => {
-		cardDisplay.appendChild(new ImageCard(template, image).element);
+	gathered_media.forEach(data => {
+		cardDisplay.appendChild(new ImageCard(template, data).element);
 	});
 }
 
@@ -275,3 +341,6 @@ export function populateLogoDisplay(display) {
 		
 	});
 }
+
+/** MAIN */
+
