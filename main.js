@@ -5,67 +5,13 @@ const lightbox = document.getElementById("lightbox");
 const lightboxImage = document.getElementById("lightbox-image").querySelector("img");
 const lightboxVideo = document.getElementById("lightbox-video").querySelector("source");
 
-/**
-	Data
-**/
-
-const images = [
-	{
-		name: "ig_quintent_promo.png",
-		title: "Indigo Gaming - Quintet",
-		caption: "Indigo Gaming Quintent documentary key image."
-	},
-	{
-		name: "samus.png",
-		title: "Samus Aran",
-		caption: "Samus Aran."
-	},
-	{
-		name: "twin_perfect.png",
-		title: "Twin Perfect",
-		caption: "Twin Perfect promo image."
-	}
-]
-
-/**
-	
-**/
-
-const pageStrats = {
-	
-	"main": {
-		init()
-		{
-			document.querySelectorAll(".logo-display").forEach(display =>{
-				populateLogoDisplay(display);
-			});
-		}
-	},
-	
-	"2d": {
-		init()
-		{
-			document.querySelectorAll(".card-display").forEach(display => {
-				populateCardDisplay(display);
-			});
-		}
-	},
-	
-}
-
-
-/**
-	Templates
-**/
+/** Templates */
 
 const response = await fetch("templates/card.html")
 const html = await response.text();
 document.body.insertAdjacentHTML("beforeend", html);
 
-
-/**
-	Events
-**/
+/** Events */
 
 document.querySelectorAll(".nav-link").forEach(link => {
 	link.addEventListener("click", evt => {
@@ -80,7 +26,6 @@ document.querySelectorAll(".nav-link").forEach(link => {
 });
 
 /**	Funcs */
-
 
 function setActivePage(pageName) {
 	
@@ -98,9 +43,8 @@ async function loadPage(page, targetID)
 	
 	const html = await response.text();
 	document.querySelector(targetID).innerHTML = html;
-	setActivePage(page)
+	setActivePage(page);
 	
-	//pageStrats[page]?.init();
 	
 	document.querySelectorAll(".logo-display").forEach(display =>{
 		populateLogoDisplay(display);
@@ -112,9 +56,7 @@ async function loadPage(page, targetID)
 }
 
 
-/**
-	Main
-**/
+/**	Main */
 
 loadPage("sidebar", "#sidebar");
 loadPage("main", "#content-frame");

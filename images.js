@@ -241,6 +241,7 @@ lightboxVideo.addEventListener("canplay", () => {
 lightbox.addEventListener("click", (evt) =>{
 	
 	lightbox.classList.add("hidden");
+	lightboxVideo.pause();
 	
 });
 
@@ -257,11 +258,13 @@ class ImageCard
 		{
 			card.dataset.videoPath = `${Paths.VIDEOS_DIR}${data.name}`;
 			card.dataset.cardType = data.type;
+			card.classList.toggle("card-type-video");
 		}
 		else if (data.type === Media.IMAGE)
 		{
 			card.dataset.imagePath = `${Paths.ART_DIR}${data.name}`
 			card.dataset.cardType = data.type;
+			card.classList.toggle("card-type-image");
 		}
 		
 		card.querySelector(".card-image img").src = `${Paths.THUMBS_DIR}${data.name}.png`;
@@ -275,7 +278,7 @@ class ImageCard
 		
 		const card = evt.target;
 		
-		lightbox.classList.add("hidden");
+		lightbox.classList.remove("hidden");
 		
 		if (card.dataset.cardType === Media.VIDEO) {
 			lightboxVideo.src = `${card.dataset.videoPath}.mp4`;

@@ -72,7 +72,7 @@ footer {
 #sidebar-inset {
 	
 	width: 248px;
-	height: fit-content;
+	max-height: fit-content;
 }
 
 #content .clickable-image {

@@ -365,3 +365,22 @@
 	color: var(--navajo-white);
 }
 
+.card-type-video {
+	position: relative;
+}
+
+.card-type-video::after{
+	content: "";
+	position: absolute;
+	inset: 8% 80%;
+	
+	height: 10%;
+	aspect-ratio: 1/1;
+
+	clip-path: polygon(0% 0%, 100% 50%, 0% 100%);
+	
+	background-color: var(--navajo-white);
+	
+	mix-blend-mode: linear-light;
+	opacity: 0.8;
+}

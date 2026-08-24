@@ -39,3 +39,8 @@
 	padding: 20px;
 	
 }
+
+#content a{
+	color: var(--dark-gray);
+	text-decoration: none;
+}

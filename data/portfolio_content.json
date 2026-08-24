@@ -1,17 +1,53 @@
 [
   {
-    "name": "crono_a",
-    "title": "Crono",
-    "caption": "A sculpt of Crono to celebrate the anniversary of Chrono Trigger.",
+    "name": "ig_playing_god_promo",
+    "title": "Indigo Gaming’s ‘Playing God’ Key Art",
+    "caption": "Key art for Indigo Gaming’s “Playing God” documentary.",
     "type": "image",
     "tags": [
-      "3d"
+      "2d"
     ]
   },
   {
-    "name": "crono_anniversary_concept",
-    "title": "Chrono Trigger Anniversary Concept",
-    "caption": "Concept art to celebrate the anniversary of Chrono Trigger.",
+    "name": "ig_quintet_promo",
+    "title": "Indigo Gaming – Quintet Key Art",
+    "caption": "Key art for Indigo Gaming’s Quintent documentary.",
+    "type": "image",
+    "tags": [
+      "2d"
+    ]
+  },
+  {
+    "name": "samus",
+    "title": "Samus Aran",
+    "caption": "Samus Aran.",
+    "type": "image",
+    "tags": [
+      "2d"
+    ]
+  },
+  {
+    "name": "stars_jared",
+    "title": "Jared, member of S.T.A.R.S.",
+    "caption": "An illustration of Jared from Avalanche Gaming as a member of Resident Evil’s S.T.A.R.S. unit.",
+    "type": "image",
+    "tags": [
+      "2d"
+    ]
+  },
+  {
+    "name": "twin_perfect",
+    "title": "Twin Perfect Key Art",
+    "caption": "A promo illustration for Twin Perfect.",
+    "type": "image",
+    "tags": [
+      "2d"
+    ]
+  },
+  {
+    "name": "sun_wukong_concepts",
+    "title": "Sun Wukong Concepts",
+    "caption": "Concept art for new designs for Sun Wukong from RWBY.\n\nThis didn’t actually go anywhere, but I had fun!",
     "type": "image",
     "tags": [
       "2d",
@@ -19,12 +55,27 @@
     ]
   },
   {
-    "name": "crono_b",
-    "title": "Crono",
-    "caption": "A sculpt of Crono to celebrate the anniversary of Chrono Trigger.",
+    "name": "ironclad_key_art",
+    "title": "Ironclad Key Art",
+    "caption": "Key art for the Ironclad from StarBreak.",
     "type": "image",
     "tags": [
-      "3d"
+      "2d",
+      "concept-art",
+      "illustration",
+      "starbreak"
+    ]
+  },
+  {
+    "name": "wildfire_key_art",
+    "title": "Wildfire Key Art",
+    "caption": "Key art for the Wildfire from StarBreak.",
+    "type": "image",
+    "tags": [
+      "2d",
+      "concept-art",
+      "illustration",
+      "starbreak"
     ]
   },
   {
@@ -61,6 +112,59 @@
     ]
   },
   {
+    "name": "ironclad_concepts",
+    "title": "Ironclad Concepts",
+    "caption": "Various concept art for the Ironclad from StarBreak.",
+    "type": "image",
+    "tags": [
+      "2d",
+      "concept-art",
+      "starbreak"
+    ]
+  },
+  {
+    "name": "wildfire_early_concepts",
+    "title": "Wildfire Concepts",
+    "caption": "Various concept art for the Wildfire from StarBreak.",
+    "type": "image",
+    "tags": [
+      "2d",
+      "concept-art",
+      "starbreak"
+    ]
+  },
+  {
+    "name": "wildfire_promo",
+    "title": "Wildfire Promo Art",
+    "caption": "Promo art featuring the Wildfire from StarBreak.",
+    "type": "image",
+    "tags": [
+      "2d",
+      "illustration",
+      "starbreak"
+    ]
+  },
+  {
+    "name": "baroness",
+    "title": "Baroness Class",
+    "caption": "“Baroness” character class concept art for Reclaimer.",
+    "type": "image",
+    "tags": [
+      "2d",
+      "reclaimer"
+    ]
+  },
+  {
+    "name": "crono_anniversary_concept",
+    "title": "Chrono Trigger Anniversary Concept",
+    "caption": "Concept art to celebrate the anniversary of Chrono Trigger.",
+    "type": "image",
+    "tags": [
+      "2d",
+      "concept-art"
+    ]
+  },
+  {
     "name": "duskwing_key",
     "title": "Duskwing",
     "caption": "Key art for the Duskwing character from StarBreak.",
@@ -69,6 +173,132 @@
       "2d",
       "concept-art",
       "starbreak"
+    ]
+  },
+  {
+    "name": "sonic_bonus_concepts",
+    "title": "Sonic Bonus Gate Concepts",
+    "caption": "“Bonus Gate” concept art for an unreleased Sonic game.",
+    "type": "image",
+    "tags": [
+      "2d",
+      "sonic"
+    ]
+  },
+  {
+    "name": "sonic_mania_2_style",
+    "title": "Unreleased Sonic Game Concept Art.",
+    "caption": "Concept art for an unreleased Sonic game.",
+    "type": "image",
+    "tags": [
+      "2d",
+      "sonic"
+    ]
+  },
+  {
+    "name": "sonic_special_stage",
+    "title": "Sonic Special Stage",
+    "caption": "Special Stage concept art for an unreleased Sonic game.",
+    "type": "image",
+    "tags": [
+      "2d",
+      "sonic"
+    ]
+  },
+  {
+    "name": "crono_a",
+    "title": "Crono",
+    "caption": "A sculpt of Crono to celebrate the anniversary of Chrono Trigger.",
+    "type": "image",
+    "tags": [
+      "3d"
+    ]
+  },
+  {
+    "name": "crono_b",
+    "title": "Crono",
+    "caption": "A sculpt of Crono to celebrate the anniversary of Chrono Trigger.",
+    "type": "image",
+    "tags": [
+      "3d"
+    ]
+  },
+  {
+    "name": "super_method_s950",
+    "title": "Super Method S-950",
+    "caption": "Super Deformed Super Method S-950.",
+    "type": "video",
+    "tags": [
+      "3d"
+    ]
+  },
+  {
+    "name": "super_method_s950_a",
+    "title": "Super Method S-950",
+    "caption": "Super Deformed Super Method S-950.",
+    "type": "image",
+    "tags": [
+      "3d"
+    ]
+  },
+  {
+    "name": "location_builder_a",
+    "title": "Location Builder Screenshot",
+    "caption": "A screenshot of the Location Builder interface.",
+    "type": "image",
+    "tags": [
+      "tech"
+    ]
+  },
+  {
+    "name": "location_builder_b",
+    "title": "Location Builder screenshot.",
+    "caption": "A screenshot of the Location Builder interface.",
+    "type": "image",
+    "tags": [
+      "tech"
+    ]
+  },
+  {
+    "name": "shademaker",
+    "title": "ShadeMaker",
+    "caption": "SHADEMAKER\n\nShadeMaker is a plug-in for Krita that automatically generates a series of shades based on colors provided by the artist. This dramatically speeds up palette-making time; a great convenience for many methods of making 2D art.\n\nIt has a variety of features, including different modes for blending in different color spaces and color/value adjustments across shades.\n\nIt can be found here ► https://supermethod.gumroad.com/",
+    "type": "video",
+    "tags": [
+      "tech"
+    ]
+  },
+  {
+    "name": "quest_masters_locations",
+    "title": "Quest Masters Locations",
+    "caption": "The Locations screen in Quest Masters. \n\nHere, parties can be dispatched on quests. Their progress is tracked in an adventure log, allowing you to asses their progress and evaluate their results when they return.",
+    "type": "image",
+    "tags": [
+      "tech",
+      "game-dev",
+      "quest-masters"
+    ]
+  },
+  {
+    "name": "quest_masters_members",
+    "title": "Quest Masters Members",
+    "caption": "The Members screen in Quest Masters.\n\nHere, new recruits are proposed to the players periodically. The player can vet and select new members for their guild. In the related sub-menus, they can be organized into parties.",
+    "type": "image",
+    "tags": [
+      "tech",
+      "game-dev",
+      "quest-masters"
+    ]
+  },
+  {
+    "name": "quest_masters_promo",
+    "title": "Quest Masters",
+    "caption": "Quest Masters was an RPG / Management Sim.\n\nPlayers assmble and customize their own guild of adventurers. Teams of characters are dispatched to various locations where randomly generated adventures await. Strengthen your recruits and find valuable loot to make your guild the most powerful in the world!\n\nProgramming, design, and a very small amount of art was provided by me. The vast majority of artwork was provided by Ashleigh Hetrick (https://www.pyawakit.com/).",
+    "type": "image",
+    "tags": [
+      "tech",
+      "game-dev",
+      "quest-masters"
     ]
   },
   {
@@ -122,65 +352,6 @@
     ]
   },
   {
-    "name": "ig_playing_god_promo",
-    "title": "Indigo Gaming’s ‘Playing God’ Key Art",
-    "caption": "Key art for Indigo Gaming’s “Playing God” documentary.",
-    "type": "image",
-    "tags": [
-      "2d"
-    ]
-  },
-  {
-    "name": "ig_quintet_promo",
-    "title": "Indigo Gaming – Quintet Key Art",
-    "caption": "Key art for Indigo Gaming’s Quintent documentary.",
-    "type": "image",
-    "tags": [
-      "2d"
-    ]
-  },
-  {
-    "name": "ironclad_concepts",
-    "title": "Ironclad Concepts",
-    "caption": "Various concept art for the Ironclad from StarBreak.",
-    "type": "image",
-    "tags": [
-      "2d",
-      "concept-art",
-      "starbreak"
-    ]
-  },
-  {
-    "name": "ironclad_key_art",
-    "title": "Ironclad Key Art",
-    "caption": "Key art for the Ironclad from StarBreak.",
-    "type": "image",
-    "tags": [
-      "2d",
-      "concept-art",
-      "illustration",
-      "starbreak"
-    ]
-  },
-  {
-    "name": "location_builder_a",
-    "title": "Location Builder Screenshot",
-    "caption": "A screenshot of the Location Builder interface.",
-    "type": "image",
-    "tags": [
-      "tech"
-    ]
-  },
-  {
-    "name": "location_builder_b",
-    "title": "Location Builder screenshot.",
-    "caption": "A screenshot of the Location Builder interface.",
-    "type": "image",
-    "tags": [
-      "tech"
-    ]
-  },
-  {
     "name": "location_builder_lookaround",
     "title": "Looking Around a Location",
     "caption": "Video capture of looking around in a Location built with Location Builder.",
@@ -201,144 +372,85 @@
     ]
   },
   {
-    "name": "samus",
-    "title": "Samus Aran",
-    "caption": "Samus Aran.",
+    "name": "quest_masters_parties",
+    "title": "Quest Masters Parties",
+    "caption": "The Parties screen from Quest Masters.\n\nHere, players can assemble their guild members into parties. They can also manage their equipment and consumable items.",
     "type": "image",
     "tags": [
-      "2d"
+      "tech",
+      "quest-masters"
     ]
   },
   {
-    "name": "sonic_bonus_concepts",
-    "title": "Sonic Bonus Gate Concepts",
-    "caption": "“Bonus Gate” concept art for an unreleased Sonic game.",
-    "type": "image",
-    "tags": [
-      "2d",
-      "sonic"
-    ]
-  },
-  {
-    "name": "sonic_mania_2_style",
-    "title": "Unreleased Sonic Game Concept Art.",
-    "caption": "Concept art for an unreleased Sonic game.",
-    "type": "image",
-    "tags": [
-      "2d",
-      "sonic"
-    ]
-  },
-  {
-    "name": "sonic_special_stage",
-    "title": "Sonic Special Stage",
-    "caption": "Special Stage concept art for an unreleased Sonic game.",
-    "type": "image",
-    "tags": [
-      "2d",
-      "sonic"
-    ]
-  },
-  {
-    "name": "stars_jared",
-    "title": "Jared, member of S.T.A.R.S.",
-    "caption": "An illustration of Jared from Avalanche Gaming as a member of Resident Evil’s S.T.A.R.S. unit.",
-    "type": "image",
-    "tags": [
-      "2d"
-    ]
-  },
-  {
-    "name": "sun_wukong_concepts",
-    "title": "Sun Wukong Concepts",
-    "caption": "Concept art for new designs for Sun Wukong from RWBY.\n\nThis didn’t actually go anywhere, but I had fun!",
-    "type": "image",
-    "tags": [
-      "2d",
-      "concept-art"
-    ]
-  },
-  {
-    "name": "super_method_s950",
-    "title": "Super Method S-950",
-    "caption": "Super Deformed Super Method S-950.",
+    "name": "starbreak_trailer",
+    "title": "StarBreak",
+    "caption": "StarBreak is a massively-multiplayer action game. \n\nI acted as art director on this game. I produced all manner of artwork. Concept art, promotional illustrations, UI, logos, character animations, directorial edits, and more.",
     "type": "video",
     "tags": [
-      "3d"
+      "starbreak",
+      "game-dev"
     ]
   },
   {
-    "name": "super_method_s950_a",
-    "title": "Super Method S-950",
-    "caption": "Super Deformed Super Method S-950.",
-    "type": "image",
-    "tags": [
-      "3d"
-    ]
-  },
-  {
-    "name": "twin_perfect",
-    "title": "Twin Perfect Key Art",
-    "caption": "A promo illustration for Twin Perfect.",
-    "type": "image",
-    "tags": [
-      "2d"
-    ]
-  },
-  {
-    "name": "wildfire_early_concepts",
-    "title": "Wildfire Concepts",
-    "caption": "Various concept art for the Wildfire from StarBreak.",
+    "name": "sonic_cactus",
+    "title": "Cactus",
+    "caption": "Concept art style test for environment props in “Sonic’s world”.",
     "type": "image",
     "tags": [
       "2d",
       "concept-art",
-      "starbreak"
+      "sonic"
     ]
   },
   {
-    "name": "wildfire_key_art",
-    "title": "Wildfire Key Art",
-    "caption": "Key art for the Wildfire from StarBreak.",
+    "name": "sonic_building",
+    "title": "Sega Building",
+    "caption": "3D environment asset style test for an unreleased Sonic game.",
+    "type": "image",
+    "tags": [
+      "3d",
+      "sonic"
+    ]
+  },
+  {
+    "name": "sonic_palm",
+    "title": "Palm Tree",
+    "caption": "For this game it was essential that 3d and 2d environment art blend seamlessly. To the right is the original concept art. I created the final assets on the left. The trunk is 2d and the leaves are articulated 3d assets.",
+    "type": "image",
+    "tags": [
+      "3d",
+      "sonic"
+    ]
+  },
+  {
+    "name": "sonic_bonus_stage",
+    "title": "Bonus Stage",
+    "caption": "Concept art for the background of a bonus stage. Gameplay would have taken place on a closer layer.",
     "type": "image",
     "tags": [
       "2d",
-      "concept-art",
-      "illustration",
-      "starbreak"
+      "sonic"
     ]
   },
   {
-    "name": "wildfire_promo",
-    "title": "Wildfire Promo Art",
-    "caption": "Promo art featuring the Wildfire from StarBreak.",
+    "name": "sonic_melody_balls",
+    "title": "Melody Ball Concepts",
+    "caption": "Concept art for “melody ball” items Sonic can collect in a special stage.",
     "type": "image",
     "tags": [
       "2d",
-      "illustration",
-      "starbreak"
+      "sonic"
     ]
   },
   {
-    "name": "quest_masters_promo",
-    "title": "Quest Masters",
-    "caption": "Quest Masters was an RPG / Management Sim.\n\nPlayers assmble and customize their own guild of adventurers. Teams of characters are dispatched to various locations where randomly generated adventures await. Strengthen your recruits and find valuable loot to make your guild the most powerful in the world!\n\nProgramming, design, and a very small amount of art was provided by me. The vast majority of artwork was provided by Ashleigh Hetrick (https://www.pyawakit.com/).",
+    "name": "starbreak_early_screen_concept",
+    "title": "Early Screenshot Concept",
+    "caption": "Early screenshot concept art for StarBreak. I think we finally started converging on the final style of the game around this time.",
     "type": "image",
     "tags": [
-      "tech",
-      "game-dev",
-      "quest-masters"
-    ]
-  },
-  {
-    "name": "quest_masters_members",
-    "title": "Quest Masters Members Screen",
-    "caption": "The members screen in Quest Masters. Here, new recruits are proposed to the players periodically. \n\nThe player can vet and select new members for their guilds from this menu. In the related sub-menus, they can be organized into parties.",
-    "type": "image",
-    "tags": [
-      "tech",
-      "game-dev",
-      "quest-masters"
+      "2d",
+      "starbreak",
+      "concept-art"
     ]
   }
 ]
