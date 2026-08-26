@@ -241,7 +241,15 @@ lightboxVideo.addEventListener("canplay", () => {
 lightbox.addEventListener("click", (evt) =>{
 	
 	lightbox.classList.add("hidden");
+	
+	lightboxVideo.remove("reveal");
+	lightboxVideo.add("hidden");
+	
+	lightboxImage.remove("reveal");
+	lightboxImage.add("hidden");
+	
 	lightboxVideo.pause();
+	lightboxImage.src="";
 	
 });
 
@@ -277,8 +285,6 @@ class ImageCard
 	PrepareLightbox(evt){
 		
 		const card = evt.target;
-		
-		lightbox.classList.remove("hidden");
 		
 		if (card.dataset.cardType === Media.VIDEO) {
 			lightboxVideo.src = `${card.dataset.videoPath}.mp4`;
@@ -341,9 +347,7 @@ export function populateLogoDisplay(display) {
 		image.src = logo.name;
 		
 		display.appendChild(image);
-		
 	});
 }
 
 /** MAIN */
-
