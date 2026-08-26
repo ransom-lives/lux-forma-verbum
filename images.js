@@ -1,6 +1,7 @@
 import * as Paths from "./paths.js";
 
 const lightbox = document.getElementById("lightbox");
+const loadingMessage = document.getElementById("loading-message");
 const lightboxImage = document.getElementById("lightbox-image").querySelector("img");
 const lightboxVideo = document.getElementById("lightbox-video").querySelector("video");
 const lightboxCaption = document.getElementById("caption-panel").querySelector(".panel-c");
@@ -214,6 +215,9 @@ const logos = {
 
 lightboxImage.onload = () => {
 	
+	loadingMessage.classList.remove("reveal")
+	loadingMessage.classList.add("hidden");
+	
 	lightboxVideo.classList.remove("reveal");
 	lightboxVideo.classList.add("hidden");
 	
@@ -225,9 +229,13 @@ lightboxImage.onload = () => {
 	lightboxImage.classList.add("reveal");
 	
 	lightbox.classList.remove("hidden");
+	
 };
 
 lightboxVideo.addEventListener("canplay", () => {
+	
+	loadingMessage.classList.remove("reveal")
+	loadingMessage.classList.add("hidden");
 	
 	lightboxImage.classList.remove("reveal");
 	lightboxImage.classList.add("hidden");
@@ -247,11 +255,11 @@ lightbox.addEventListener("click", (evt) =>{
 	
 	lightbox.classList.add("hidden");
 	
-	lightboxVideo.classlist.remove("reveal");
-	lightboxVideo.classlist.add("hidden");
+	lightboxVideo.classList.remove("reveal");
+	lightboxVideo.classList.add("hidden");
 	
-	lightboxImage.classlist.remove("reveal");
-	lightboxImage.classlist.add("hidden");
+	lightboxImage.classList.remove("reveal");
+	lightboxImage.classList.add("hidden");
 	
 	lightboxVideo.pause();
 	lightboxImage.src="";
@@ -300,6 +308,11 @@ class ImageCard
 		}
 		
 		lightboxCaption.textContent = card.dataset.caption;
+		
+		lightbox.classList.remove("hidden");
+		
+		loadingMessage.classList.remove("hidden");
+		loadingMessage.classList.add("reveal")
 	}
 }
 
