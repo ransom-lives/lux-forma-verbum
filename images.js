@@ -214,27 +214,32 @@ const logos = {
 
 lightboxImage.onload = () => {
 	
-	lightbox.classList.remove("hidden");
 	lightboxVideo.classList.remove("reveal");
 	lightboxVideo.classList.add("hidden");
 	
-	lightboxImage.classList.remove("reveal");
-	void lightboxImage.offsetWidth;
-	lightboxImage.classList.add("reveal");
 	lightboxImage.classList.remove("hidden");
+	lightboxImage.classList.remove("reveal");
+	
+	void lightboxImage.offsetWidth;
+	
+	lightboxImage.classList.add("reveal");
+	
+	lightbox.classList.remove("hidden");
 };
 
 lightboxVideo.addEventListener("canplay", () => {
 	
-	lightbox.classList.remove("hidden");
 	lightboxImage.classList.remove("reveal");
 	lightboxImage.classList.add("hidden");
 	
-	lightboxVideo.classList.remove("reveal");
-	void lightboxVideo.offsetWidth;	
-	lightboxVideo.classList.add("reveal");
 	lightboxVideo.classList.remove("hidden");
+	lightboxVideo.classList.remove("reveal");
 	
+	void lightboxVideo.offsetWidth;	
+	
+	lightboxVideo.classList.add("reveal");
+	
+	lightbox.classList.remove("hidden");
 	lightboxVideo.play();
 });
 
@@ -242,11 +247,11 @@ lightbox.addEventListener("click", (evt) =>{
 	
 	lightbox.classList.add("hidden");
 	
-	lightboxVideo.remove("reveal");
-	lightboxVideo.add("hidden");
+	lightboxVideo.classlist.remove("reveal");
+	lightboxVideo.classlist.add("hidden");
 	
-	lightboxImage.remove("reveal");
-	lightboxImage.add("hidden");
+	lightboxImage.classlist.remove("reveal");
+	lightboxImage.classlist.add("hidden");
 	
 	lightboxVideo.pause();
 	lightboxImage.src="";
